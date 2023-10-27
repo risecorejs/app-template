@@ -12,8 +12,6 @@ const app = express()
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-// app.use(middleware)
-// ...
 
 // Enable CORS if configured
 if (config.server.cors) {
@@ -28,13 +26,10 @@ if (config.server.rateLimit) {
 // Registering shared services
 global.$sharedServices = {
   authService: require('./modules/auth/auth.service')
-  // service_name: require('./modules/service_name/service_name.service')
-  // ...
 }
 
 // Registering module controllers
 app.use(...require('./modules/auth/auth.controller'))
-// app.use(...require('./modules/module_name/module_name.controller'))
-// ...
 
+// Start the server and print server information
 app.listen(config.server.port, config.server.host, printServerInfo(config))
