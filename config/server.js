@@ -13,6 +13,14 @@ module.exports = {
   // Number of server instances. Default: 1
   instances: getenv.int('SERVER.INSTANCES', 1),
 
+  // CORS configuration. Homepage: https://github.com/expressjs/cors#readme
+  cors: {
+    // Define CORS options here. For example:
+    // origin: 'https://example.com',
+    // methods: 'GET,POST,PUT,DELETE',
+    // ...
+  },
+
   // Rate Limit configuration. Homepage: https://github.com/express-rate-limit/express-rate-limit#readme
   rateLimit: {
     // Time window in milliseconds for rate limiting. Default: 1 minute (60000 ms)

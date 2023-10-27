@@ -8,11 +8,9 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(cors())
 
-if (config.server.rateLimit) {
-  app.use(rateLimit(config.server.rateLimit))
-}
+if (config.server.cors) app.use(cors(config.server.cors))
+if (config.server.rateLimit) app.use(rateLimit(config.server.rateLimit))
 
 void [
   require('./modules/auth/auth.controller')
