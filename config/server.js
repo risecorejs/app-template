@@ -23,7 +23,7 @@ module.exports = {
 
   // Rate Limit configuration. Homepage: https://github.com/express-rate-limit/express-rate-limit#readme
   rateLimit: {
-    // Time window in milliseconds for rate limiting. Default: 1 minute (60000 ms)
+    // Time window in milliseconds for rate limiting. Default: 60 * 1000 = 60000 ms (1 minute)
     windowMs: getenv.int('SERVER.RATE_LIMIT.WINDOW_MS', 60 * 1000),
 
     // Maximum number of requests allowed within the time window. Default: 1000 requests
