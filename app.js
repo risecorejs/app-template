@@ -4,6 +4,7 @@ const cors = require('cors')
 const rateLimit = require('express-rate-limit')
 
 const config = require('./config')
+const printServerInfo = require('./utils/print-server-info')
 
 const app = express()
 
@@ -19,8 +20,4 @@ void [
   // ...
 ].forEach((moduleController) => app.use(...moduleController))
 
-const { port, host } = config.server
-
-app.listen(port, host, () => {
-  console.log(`Server is running on http://${host}:${port}`)
-})
+app.listen(config.server.port, config.server.host, printServerInfo(config))
