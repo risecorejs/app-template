@@ -18,7 +18,7 @@ if (config.server.cors) {
   app.use(cors(config.server.cors))
 }
 
-// Enable rate limiting if configured
+// Enable Rate Limiting if configured
 if (config.server.rateLimit) {
   app.use(rateLimit(config.server.rateLimit))
 }
