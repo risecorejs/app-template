@@ -9,18 +9,12 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
-app.use(
-  rateLimit({
-    windowMs: config.server.rateLimit.windowMs,
-    limit: config.server.rateLimit.limit
-  })
-)
 
-const moduleControllers = [
+if (config.server.rateLimit) {
+  app.use(rateLimit(config.server.rateLimit))
+}
+
+void [
   require('./modules/auth/auth.controller')
   // ...
-]
-
-for (const moduleController of moduleControllers) {
-  app.use(...moduleController)
-}
+].forEach((moduleController) => app.use(...moduleController))
