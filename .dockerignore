@@ -1,0 +1,15 @@
+.git
+.gitignore
+
+.idea
+
+node_modules
+
+.env*
+
+.dockerignore
+Dockerfile
+
+.prettierrc.json
+
+**/README.md
