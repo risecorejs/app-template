@@ -10,7 +10,7 @@
     "dev": "nodemon app.js",
     "start": "node start.js",
     "make:migrations": "rcjs make:migrations",
-    "migrate": "rcjs migrate"
+    "db:migrate": "rcjs db:migrate"
   },
   "dependencies": {
     "chalk": "4.1.2",

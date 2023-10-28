@@ -33,3 +33,11 @@ app.use(...require('./modules/auth/auth.controller'))
 
 // Start the server and print server information
 app.listen(config.server.port, config.server.host, printServerInfo(config))
+
+// rcjs make:modules --name users
+// rcjs make:model --module users --name User
+// rcjs make:service --module users
+// rcjs make:controller --module users
+// rcjs make:migrations --module users
+// rcjs db:migrate --module --file
+// rcjs db:rollback --module --file
