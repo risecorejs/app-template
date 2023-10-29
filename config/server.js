@@ -13,6 +13,12 @@ module.exports = {
   // Number of server instances. Default: 1
   instances: getenv.int('SERVER.INSTANCES', 1),
 
+  // Logger configuration. Homepage: https://github.com/expressjs/morgan#readme
+  logger: {
+    // Define the log format for server logging. Default: 'tiny'
+    format: getenv.string('SERVER.LOGGER.FORMAT', 'tiny')
+  },
+
   // CORS configuration. Homepage: https://github.com/expressjs/cors#readme
   cors: {
     // Define CORS options here. For example:

@@ -1,27 +1,13 @@
 const express = require('express')
-const morgan = require('morgan')
-const cors = require('cors')
-const rateLimit = require('express-rate-limit')
 
+const middleware = require('./middleware')
 const config = require('./config')
 const printServerInfo = require('./utils/print-server-info')
 
 const app = express()
 
 // Registering middleware
-app.use(morgan('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
-
-// Enable CORS if configured
-if (config.server.cors) {
-  app.use(cors(config.server.cors))
-}
-
-// Enable Rate Limiting if configured
-if (config.server.rateLimit) {
-  app.use(rateLimit(config.server.rateLimit))
-}
+app.use(middleware)
 
 // Registering shared services
 global.$sharedServices = {
