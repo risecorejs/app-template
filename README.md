@@ -56,7 +56,7 @@ Before you start using this template, make sure you have Node.js and npm install
 3. Install dependencies by running: `npm install`
 4. Install additional global packages:
 
-```
+```bash
 npm install -g pm2@latest
 npm install -g @risecorejs/app-cli
 npm install -g nodemon
@@ -64,7 +64,7 @@ npm install -g nodemon
 
 5. Start the application using:
 
-```
+```bash
 npm run dev
 npm run start
 ```
@@ -93,7 +93,17 @@ Follow these steps to build the Docker image for your application:
 docker build -t <your_image_name> .
 ```
 
-> Feel free to customize the Dockerfile and container settings as per your project's requirements. Docker provides a powerful way to package and deploy your application consistently across different environments.
+### Running the Docker Container
+
+Once you have built the Docker image, you can run a Docker container with your Express.js application using the following command:
+
+```bash
+docker run -d -p 5000:5000 <your_image_name>
+```
+
+Your Express.js application should now be accessible within the Docker container, and you can access it through your host machine's port.
+
+Feel free to customize the Dockerfile and container settings as per your project's requirements. Docker provides a powerful way to package and deploy your application consistently across different environments.
 
 ## Questions and Feedback
 
