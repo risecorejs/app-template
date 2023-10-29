@@ -3,9 +3,9 @@
   "private": true,
   "author": "Risecorejs <risecorejs@gmail.com>",
   "bugs": {
-    "url": "https://github.com/risecorejs/app/issues"
+    "url": "https://github.com/risecorejs/app-template/issues"
   },
-  "homepage": "https://github.com/risecorejs/app#readme",
+  "homepage": "https://github.com/risecorejs/app-template#readme",
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node start.js",
