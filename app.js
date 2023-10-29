@@ -10,12 +10,10 @@ const app = express()
 app.use(middleware)
 
 // Registering shared services
-global.$sharedServices = {
-  authService: require('./modules/auth/auth.service')
-}
+require('./shared-services')
 
 // Registering module controllers
-app.use(...require('./modules/auth/auth.controller'))
+app.use.apply(app, require('./modules/auth/auth.controller'))
 
 // Start the server and print server information
 app.listen(config.server.port, config.server.host, printServerInfo(config))
