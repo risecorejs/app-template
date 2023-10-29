@@ -26,10 +26,10 @@ module.exports = (config) => () => {
     ),
     chalk.magenta(`⚐  CORS enabled: ${getStyledTextYesNo(cors)}`),
     chalk.magenta(`⚐  Rate Limiting enabled: ${getStyledTextYesNo(rateLimit)}`),
+    '',
+    chalk.red('✘  Press Ctrl + C to exit.'),
     ''
   ]
-
-  console.clear()
 
   for (const line of lines) {
     console.log('  ' + line)
