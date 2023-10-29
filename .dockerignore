@@ -1,11 +1,11 @@
+.idea
+
 .git
 .gitignore
 
-.idea
-
 node_modules
 
-.env*
+.env.example
 
 .dockerignore
 Dockerfile
