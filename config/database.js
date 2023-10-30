@@ -11,7 +11,7 @@ module.exports = {
   port: getenv.int('DATABASE.PORT', 5432),
 
   // Database name. Default: ''
-  name: getenv.string('DATABASE.NAME', ''),
+  database: getenv.string('DATABASE.NAME', ''),
 
   // Database username. Default: ''
   username: getenv.string('DATABASE.USERNAME', ''),
