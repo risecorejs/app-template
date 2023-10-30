@@ -24,7 +24,7 @@ The project has the following structure:
 │           │   └── <model_name>.js
 │           │
 │           ├── 📂 migrations
-│           │   ├── 0001_29102023_crate_table_<table_name>.js
+│           │   ├── 0001_29102023_create_table_<table_name>.js
 │           │   ├── 0002_29102023_add_column_<table_name>.js
 │           │   └── 0003_29102023_rename_column_<table_name>.js
 │           │
