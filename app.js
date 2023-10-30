@@ -13,7 +13,7 @@ app.use(middleware)
 require('./shared-services')
 
 // Registering module controllers
-app.use.apply(app, require('./modules/auth/auth.controller'))
+// app.use.apply(app, require('./modules/<module_name>/<module_name>.controller'))
 
 // Start the server and print server information
 app.listen(config.server.port, config.server.host, printServerInfo(config))
