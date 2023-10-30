@@ -16,22 +16,22 @@ The project has the following structure:
 │   │   └── database.js
 │   │
 │   📂 modules
-│   │   └── 📂 <module_name>
-│   │       ├── <module_name>.service.js
-│   │       ├── <module_name>.controller.js
-│   │       │
-│   │       ├── 📂 models
-│   │       │   └── <model_name>.js
-│   │       │
-│   │       ├── 📂 migrations
-│   │       │   ├── 0001_29102023_crate_table_<table_name>.js
-│   │       │   ├── 0002_29102023_add_column_<table_name>.js
-│   │       │   └── 0003_29102023_rename_column_<table_name>.js
-│   │       │
-│   │       └──📂 middleware
-│   │
-│   📂 utils
-│       └── print-server-info.js
+│       └── 📂 <module_name>
+│           ├── <module_name>.service.js
+│           ├── <module_name>.controller.js
+│           │
+│           ├── 📂 models
+│           │   └── <model_name>.js
+│           │
+│           ├── 📂 migrations
+│           │   ├── 0001_29102023_crate_table_<table_name>.js
+│           │   ├── 0002_29102023_add_column_<table_name>.js
+│           │   └── 0003_29102023_rename_column_<table_name>.js
+│           │
+│           └──📂 middleware
+│               ├── <middleware_name>.middleware.js
+│               ├── <middleware_name>.middleware.js
+│               └── <middleware_name>.middleware.js
 │
 ├── .dockerignore
 ├── .env.example

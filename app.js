@@ -1,8 +1,8 @@
 const express = require('express')
+const { printServerInfo } = require('@risecorejs/app/utils')
 
 const middleware = require('./middleware')
 const config = require('./config')
-const { printServerInfo } = require('@risecorejs/app/utils')
 
 const app = express()
 
