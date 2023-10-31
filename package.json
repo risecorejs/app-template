@@ -8,9 +8,7 @@
   "homepage": "https://github.com/risecorejs/app-template#readme",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "node start.js",
-    "make:migrations": "rcjs make:migrations",
-    "db:migrate": "rcjs db:migrate"
+    "start": "node start.js"
   },
   "dependencies": {
     "@risecorejs/app": "^1.0.4",

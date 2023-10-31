@@ -2,6 +2,34 @@
 
 This project represents a template for an application based on Express.js. It provides a basic structure and configurations for quickly starting web application development.
 
+## Running the Project
+
+Before you start using this template, make sure you have Node.js and npm installed. Follow these steps:
+
+1. Clone the repository or create a new project using this template.
+2. Create a `.env` file based on `.env.example` and provide the necessary environment variables.
+3. Install dependencies by running: `npm install`
+4. Install additional global packages:
+
+```bash
+npm install -g pm2@latest
+npm install -g @risecorejs/app-cli
+npm install -g nodemon
+```
+
+5. Start the application using:
+
+```bash
+npm run dev
+npm run start
+```
+
+After these steps, your application should be accessible at the specified host and port.
+
+## CLI (Command Line Interface)
+
+The CLI for this project is powered by the [@risecorejs/app-cli](https://github.com/risecorejs/app-cli) package. It provides a set of useful commands to streamline your development process and manage various aspects of your Express.js application.
+
 ## Project Structure
 
 The project has the following structure:
@@ -46,30 +74,6 @@ The project has the following structure:
 ├── shared-services.js
 └── start.js
 ```
-
-## Running the Project
-
-Before you start using this template, make sure you have Node.js and npm installed. Follow these steps:
-
-1. Clone the repository or create a new project using this template.
-2. Create a `.env` file based on `.env.example` and provide the necessary environment variables.
-3. Install dependencies by running: `npm install`
-4. Install additional global packages:
-
-```bash
-npm install -g pm2@latest
-npm install -g @risecorejs/app-cli
-npm install -g nodemon
-```
-
-5. Start the application using:
-
-```bash
-npm run dev
-npm run start
-```
-
-After these steps, your application should be accessible at the specified host and port.
 
 ## Customization
 
