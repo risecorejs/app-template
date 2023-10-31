@@ -24,9 +24,9 @@ The project has the following structure:
 │           │   └── <model_name>.js
 │           │
 │           ├── 📂 migrations
-│           │   ├── 0001_29102023_create_table_<table_name>.js
-│           │   ├── 0002_29102023_add_column_<table_name>.js
-│           │   └── 0003_29102023_rename_column_<table_name>.js
+│           │   ├── 0001_20231029_create_table_<table_name>.js
+│           │   ├── 0002_20231029_add_column_<table_name>.js
+│           │   └── 0003_20231029_rename_column_<table_name>.js
 │           │
 │           └──📂 middleware
 │               ├── <middleware_name>.middleware.js
